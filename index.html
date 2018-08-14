@@ -1,17 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/lib/bootstrap/min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Escpae Room Experience Selector</title>
-  </head>
-  <body>
-    <h1>Escpae Room Experience Selector</h1>
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
 
-    <script src="js/lib/jquery-3.3.1.min.js"></script>
-    <script src="js/lib/bootstrap.bundle.min.js"></script>
-  </body>
+  <title>Escpae Room Experience Selector</title>
+</head>
+
+<body>
+  <h1>Escpae Room Experience Selector</h1>
+
+  <main id="content" role="main">
+    <form name="experience_selection">
+      <div class="form-group row">
+        <label for="person_count" class="col-sm-2 col-form-label">Anzahl Personen</label>
+        <div class="col-sm-10">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="person_count" id="small" checked>1-6
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="person_count" id="medium">7-12
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="person_count" id="large">13+
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="duration" class="col-sm-2 col-form-label">Dauer</label>
+        <div class="col-sm-10">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary">
+              <input type="radio" name="duration" id="small">20min
+            </label>
+            <label class="btn btn-secondary active">
+              <input type="radio" name="duration" id="large" checked>45min
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="difficulty" class="col-sm-2 col-form-label">Schwierigkeit</label>
+        <div class="col-sm-10">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary">
+              <input type="radio" name="difficulty" id="easy">Einfach
+            </label>
+            <label class="btn btn-secondary active">
+              <input type="radio" name="difficulty" id="medium" checked>Mittel
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="difficulty" id="hard">Schwer
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="type" class="col-sm-2 col-form-label">Typ</label>
+        <div class="col-sm-10">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary">
+              <input type="radio" name="type" id="room">Escape Room
+            </label>
+            <label class="btn btn-secondary active">
+              <input type="radio" name="type" id="journey">Escape Mission
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <script src="js/lib/jquery-3.3.1.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
